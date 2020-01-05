@@ -1,4 +1,4 @@
-# TP E-com et e-mobilite
+# Cinema Project - E-com
 
 Auteur: TRAN Bao Thien - uapv1900181 - M2 ILSEN CLA
 
