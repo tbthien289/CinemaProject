@@ -2,47 +2,39 @@
 
 Auteur: TRAN Bao Thien - uapv1900181 - M2 ILSEN CLA
 
-## STRUCTURE DE PROJET
-
-### Composant principal
-- `ProductComponent` : pour construire le UI principal et manipuler les tâches du projet
-- `DialogOverviewExampleDialog` : c'est le modal du produit proposé
-- `DialogEdit` : c'est le modal pour modifier coordonne du produit
-
-### Service worker
-Pour construire service worker dans ce projet. On va utiliser  `work-build` pour combiner mon `custom-sw` avec la configuration au répertoire `/dist`
-- `workbox-config.js` la configuration du service worker
-- `main.ts` : inscrire le service worker par le fonction `registerServiceWorker`
-- `custom-sw.js` : gérer les écouteurs d'événements et catching les données
-- Un serveur notification `Server/server.js` avec `web-push` pour pousser la notification
-
-### Données factices
-Il y a deux tableaux principaux:
-+ `products` : données détaillées du produit
-+ `coordonnee` : coordonnee du produit
+## OBJECTIF
+Ce projet se situe dans le contexte de la gestion des films et gestion de réservation de 
+billets de cinéma. À côte de front-end, ce projet devra comporter une web « responsive » pour 
+la  réservation de billets de cinéma et une application web native pour supporter mobile. En 
+outre, on a besoin une REST API à côte de back-end. 
+ 
+L’objectif de ce projet est le développement de l’application avec le code respecte au 
+mieux les bonnes pratiques. En outre, une certaine organisation pour garantir tous les cas 
+d’utilisation via outil Trello. Github est utilisé pour gérer les versions du code. Enfin, les tests 
+unitaires sont également utilisés pour tester automatiquement le  programme (front-end et 
+back-end).
 
 ## PROJET D`EXECUTION
 
-On a deux mode pour exécution: développement et production. Service worker seulement marche dans le mode de production
+## Back-end
+`python manage.py runserver` pour lancer
 
+## Front-end
 ### Installation les bibliothèques
-
 `npm i`
 
 ### Serveur de développement
 
-Exécuter `cd PWA` après `npm start` pour un serveur de développement
+Exécuter `cd Frontend` après `npm start` pour un serveur de développement
 
 ### Build
 
-Exécuter `npm run build` pour construire le projet et workbox (service worker). Les artefacts de construction seront stockés dans le répertoire `dist/PWA`.
+Exécuter `npm run build` pour construire le projet et workbox (service worker). Les artefacts de construction seront stockés dans le répertoire `dist/Frontend`.
 
-### Serveur de production
+### Start front-end
 
-Exécuter `npm run start-server` pour lancer un serveur via `http-server` 
-Exécuter `cd Server` après `npm start` pour un serveur de la notification
+Exécuter `npm start` pour lancer
 
 ### Bibliothèque d'utilisation
-- `@angular/material` pour css composant
-- `workbox-build` produire `workbox-config` et construire service worker pour le system
-- `http-server` pour serveur de production
+- `react-bootstrap` pour css composant
+- `redux-thunk` pour redux
