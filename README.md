@@ -5,8 +5,8 @@ Auteur: TRAN Bao Thien - uapv1900181 - M2 ILSEN CLA
 ## OBJECTIF
 Ce projet se situe dans le contexte de la gestion des films et gestion de réservation de 
 billets de cinéma. À côte de front-end, ce projet devra comporter une web « responsive » pour 
-la  réservation de billets de cinéma et une application web native pour supporter mobile. En 
-outre, on a besoin une REST API à côte de back-end. 
+la  réservation de billets de cinéma et une application web native pour supporter mobile (ReactJS). En 
+outre, on a besoin une REST API à côte de back-end (Django rest framework + MongoDB). 
  
 L’objectif de ce projet est le développement de l’application avec le code respecte au 
 mieux les bonnes pratiques. En outre, une certaine organisation pour garantir tous les cas 
@@ -38,3 +38,4 @@ Exécuter `npm start` pour lancer
 ### Bibliothèque d'utilisation
 - `react-bootstrap` pour css composant
 - `redux-thunk` pour redux
+- `rest_framework_mongoengine`, `mongoengine` pour connexion MongoDB
